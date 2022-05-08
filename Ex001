@@ -1,0 +1,129 @@
+import java.util.LinkedList;
+
+import java.util.Scanner;
+
+ 
+
+public class Ex001 {
+
+	public void start() {
+
+		while (true) {
+
+			
+
+			Scanner sc = new Scanner(System.in);
+
+			
+
+			LinkedList<Integer> numList = new LinkedList<Integer>();
+
+			LinkedList<Character> operatorList = new LinkedList<Character>();
+
+			
+
+			String input;	 //-- 입력값을 담아낼 변수
+
+			String temp =""; //-- 임시 숫자를 담아낼 변수
+
+			int sum = 0;	 //-- 누적합을 담아낼 변수
+
+			
+
+			
+
+			System.out.println("계산식을 입력하세요.(quit 입력시 종료)");
+
+			input = sc.nextLine();
+
+			
+
+			if (input.equals("quit")) {
+
+				System.out.println("종료");
+
+				break;
+
+			}
+
+			
+
+			try {
+
+				for (int i = 0; i < input.length(); i++) {
+
+					char ch = input.charAt(i);
+
+					
+
+					//-- 공백일 경우를 처리하기위한 조건문
+
+					if (ch == ' ') {
+
+						continue;
+
+					}
+
+					
+
+					if (ch == '+' || ch =='-') {
+
+						numList.add(Integer.parseInt(temp)); //숫자로 바꿔서 숫자배열에 추가
+
+						operatorList.add(ch); 				 //연산자를 연산자배열에 추가
+
+		                temp = ""; 							 //임시로 저장된 숫자를 비워준다                   
+
+		                continue;
+
+					}
+
+					temp += ch;
+
+				}
+
+				
+
+				numList.add(Integer.parseInt(temp)); //마지막 숫자
+
+				
+
+				while (!operatorList.isEmpty()) {
+
+					int prevNum = numList.poll();
+
+					int nextNum = numList.poll();
+
+					char operator = operatorList.poll();
+
+					
+
+					if (operator == '+') {
+
+						numList.addFirst(prevNum + nextNum); //addFirst 배열 제일 앞에 넣는다
+
+					}else if (operator == '-') {
+
+						numList.addFirst(prevNum - nextNum);
+
+					}
+
+				}
+
+				System.out.println(numList.poll());
+
+				break;
+
+			} catch (Exception e) {
+
+				System.out.println("잘못된 입력입니다.");
+
+				break;
+
+			}
+
+		}//-- 메소드 END
+
+	}
+
+}
