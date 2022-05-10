@@ -1,0 +1,73 @@
+import java.util.Scanner;
+
+ 
+
+public class Ex002 {
+
+	public void start() {
+
+		while (true) {
+
+			try {
+				System.out.println("숫자를 입력해주세요.(quit입력시 종료)");
+				Scanner sc = new Scanner(System.in);
+
+				String input = sc.next();
+				
+				if (input.equals("quit")) {
+					System.out.println("종료");
+					break;
+				}
+				
+				int num = Integer.parseInt(input);
+		
+
+				if (num>=0 && num<=100 && num%2 != 0) {		
+					//--상단부 출력
+					for (int i =1;i<=num ;i++ )		// 행 관련, 총 3줄 
+					{								// i에 따라 줄 개수 변경된다
+						//-- 공백 출력
+						for (int j=0;j<(num-i) ;j++ )	// 공백 개수는 Max에서 내려가기 때문에 첫 입력할 * 위치 - i(줄 순서)
+						{
+							System.out.print("  ");	// * 사이의 공백이 있어서 행 마다 열을 맞추기 위해서 2번 띄어쓰기
+						}
+
+						
+
+						//-- * 출력
+						for (int k=1;k<=i*2-1 ;k++ ) // * 개수는 홀수이기 때문에 i(줄 순서)*2 -1
+						{
+							System.out.print("*");
+							System.out.print(" ");
+						}
+						System.out.println();
+					}
+
+					//--하단부 출력
+					for (int i = (num-1); i>=1 ;i-- )		// 행 관련, 총 2줄 
+					{										// i가 상단부와 다르게 2인 이유는 
+						//-- 공백 출력						// 상단부는 마지막 1줄이 추가로 있기 때문입니다.
+						for (int j=0;j<(num-i) ;j++ )		// 공백 개수는 Max에서 내려가기 때문에 첫 입력할 * 위치 - i(줄 순서)
+						{
+							System.out.print("  "); 		// * 사이의 공백이 있어서 행 마다 열을 맞추기 위해서 2번 띄어쓰기
+						}
+			
+						//-- * 출력
+						for (int k=1;k<=i*2-1 ;k++ )	
+						{
+							System.out.print("*");
+							System.out.print(" ");
+						}
+						System.out.println();
+					}	
+				}else {
+				}
+				
+				break;
+				
+			} catch(Exception e) {
+				System.out.println("잘못된 입력입니다.");
+			}//-- try-catch END
+		}//-- while문 END
+	}//-- 메소드 END
+}
