@@ -1,0 +1,41 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+public class Ex003 {
+	public void start() {
+		while (true) {
+			Scanner sc = new Scanner(System.in);
+			String first="" ;		// 입력 받을 문자열 변수
+			String reverse="" ;		// 뒤집은 문자열 변수
+			int count = 0 ; 		// 입력받은 문자열 글자 개수 파악
+			boolean ok = false;		// 회문 판별용 변수 
+			
+			//-- 문자열 입력 받기
+			System.out.println("문자열을 입력하세요 : (quit 입력시 종료)");
+			first = sc.nextLine();
+			if (first.equals("quit")) {
+				System.out.println("종료");
+				break;
+			}
+			//-- 입력받은 문자열 개수 파악
+			count = first.length();
+			
+			//-- 입력받은 문자열 뒤집어서 담는 과정
+			for(int i = 0; i<count; i++) {
+				//-- 공백일 경우를 처리하기위한 조건문
+				char ch = first.charAt(count-(i+1));
+				if (ch == ' ') {
+					continue;
+				}
+				reverse += first.charAt(count-(i+1));
+			} 
+			//-- 회문인지 판독
+			first = first.replaceAll("\\s+", "");	//-- 문자 사이의 공백이 여러개일 경우 1개로 변경합니다.
+			ok = first.trim().equals(reverse);
+			System.out.println(ok);
+			break;
+		}//-- while문 END
+	}//-- 메소드 END
+}
