@@ -1,0 +1,61 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Scanner;
+
+ 
+
+public class Ex004 {
+	public void start() {
+		while (true) {
+
+			Scanner sc = new Scanner(System.in);
+			System.out.println("숫자 및 영단어를 입력하세요.(quit 입력시 종료)");
+			String s = sc.nextLine();								// 입력 변수															
+		
+			if (s.equals("quit")) {
+				System.out.println("종료.");
+				break;
+			}
+			//-- 입력한 문자의 공백 처리 		
+			s = s.trim().replaceAll("\\s+", "");	
+		
+			StringBuilder strTemp = new StringBuilder();			// 뽑아낸 문자를 담아둘 변수
+			StringBuilder numTemp = new StringBuilder();			// 뽑아낸 숫자를 담아둘 변수
+			boolean check = true;									// 잘못된 입력을 판단하기위한 변수
+			int answer = 0;											// 최종 출력 변수
+			String[] numArray = {"zero","one","two","three","four","five","six","seven","eight","nine"};
+			Map<String, Integer> numMap = new HashMap<String, Integer>();
+			
+			//-- Map 키,값 넣기위한 반복문
+			for (int k = 0; k < 10; k++) {
+				numMap.put(numArray[k], k);
+			}		
+			//-- 숫자면 numTemp에 넣고
+			//   문자면 strTemp에 넣은 후 strTemp에 해당하는 키가 numMap 잇는지 확인하고 
+			//   있으면 numTemp에 키에 해당하는 값 넣고 strTemp 초기화
+			for (char c : s.toCharArray()) {				//-- toCharArray()를 이용해서 String을 char배열로 변환
+				if (c >= 48 && c <= 57) {
+					numTemp.append(c);
+				}else if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')) {
+					strTemp.append(c);
+					if (numMap.containsKey(strTemp.toString())) {
+						numTemp.append(numMap.get(strTemp.toString()));
+						strTemp.setLength(0);					//-- null 이나 "" 으로 초기화가 안되는 이유?
+					}
+				}
+				else {
+					System.out.println("숫자 영단어 또는 숫자만 입력하세요.(4번 문제 종료)");
+					check = false;
+					break;
+				}
+			}
+			if (!check) {
+				break;
+			}
+			answer = Integer.parseInt(numTemp.toString());
+			System.out.println(answer);
+			break;
+		}//-- while문 END
+	}//-- 메소드 END
+}
