@@ -1,0 +1,83 @@
+public class Ex005 {
+	public void start(int[] a, int[][] b) {
+		while (true) {
+			String result =""; 
+			int[] array = a;						 // 기준 array
+			int[][] commands = b;					 // 기준 command
+			int[] answer = new int[commands.length]; // 결과를 담을 배열
+			boolean check = true; 				     // 제한조건 만족을 체크하기 위한 변수
+			//-- 제한조건1
+			if (array.length <1 && array.length >100) {
+				System.out.println("array의 길이를 벗어났습니다.");
+				break;
+			}
+			//-- 제한조건2
+			for (int t = 0; t < array.length; t++) {
+				if (array[t]<1 || array[t] >100) {
+					System.out.println("array의 각 원소의 값 범위를 벗어났습니다.");
+					check = false;
+					break;
+				}
+			}
+			if (!check) {
+				break;
+			}
+			//-- 제한조건3
+			if (commands.length <1 || commands.length >100) {
+				System.out.println("command의 길이를 벗어났습니다..");
+				break;
+			}
+			//-- 제한조건4
+			for (int q = 0; q < commands.length; q++) {
+				if (commands[q].length != 3) {
+					System.out.println("commands의 각 원소의 길이 범위를 벗어났습니다..");
+					check = false;
+					break;
+				}
+			}
+			if (!check) {
+				break;
+			}
+			try {
+				for (int i = 0; i < commands.length; i++) {							// commands의 길이만큼 반복합니다.
+					int[] tempArray = new int[commands[i][1] - commands[i][0] + 1];	// 마지막번째 - 시작번째 +1로 배열크기를 지정합니다.
+					
+					int count = 0 ; // tempArray의 인덱스 번호를 늘려가기위한 변수
+					
+					for (int j = commands[i][0] - 1; j < commands[i][1]; j++) {
+		                tempArray[count] = array[j];
+		                count++;
+		            }
+					// tempArray 정렬
+					for (int k=1; k<tempArray.length ;k++ )			//-- 비교 대상을 하나씩 줄기위한 반복문
+					{									
+						for (int m=0;m<tempArray.length-k ;m++ )	
+						{
+							if(tempArray[m] > tempArray[m+1])		
+							{	
+								int temp = 0;
+								temp = tempArray[m];
+								tempArray[m] = tempArray[m+1];
+								tempArray[m+1] = temp;
+							}
+						}
+					}
+					//-- 최종 배열에 담기
+					answer[i] = tempArray[commands[i][2] - 1];
+				}
+			} catch (Exception e) {
+				System.out.println("반복문 안에서 오류입니다.");
+				break;
+			}//-- try-catch END
+			for (int m = 0; m < answer.length; m++) {
+				result += answer[m];
+				if ((m+1)==answer.length) {			 // 마지막 값일 경우 , 를 추가 안 하기위한 조건문
+					break;
+				}
+				result += ",";
+			}
+			System.out.println(result);
+			break;
+		}//-- while문 END		
+	}//-- main END
+}
