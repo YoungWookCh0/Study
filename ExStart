@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class ExStart {
+
+	public static void main(String[] args) {
+		
+		try {
+			while (true) {
+				Scanner sc = new Scanner(System.in);
+				System.out.println("문제 번호를 입력하시오(1~5).(quit 입력 시 종료)");
+				String input = sc.next();
+				
+				if (input.equals("quit")) {
+					System.out.println("종료.");
+					break;
+				}
+				
+				int numCheck = Integer.parseInt(input);
+				switch (numCheck) {
+				case 1:
+					Ex001 ex01 = new Ex001();
+					ex01.start();
+					break;
+				case 2:
+					Ex002 ex02 = new Ex002();
+					ex02.start();
+					break;
+				case 3:
+					Ex003 ex03 = new Ex003();
+					ex03.start();
+					break;
+				case 4:
+					Ex004 ex04 = new Ex004();
+					ex04.start();
+					break;
+				case 5:
+					Ex005 ex05 = new Ex005();
+					int[] array = {1, 5, 2, 6, 3, 7, 4};
+					int[][] commands = {{2, 5, 3},{4, 4, 1},{1, 7, 3}};	
+					ex05.start(array,commands);
+					break;
+
+				default:
+					break;
+				}
+			}//-- while문 END
+		} catch (Exception e) {
+			System.out.println("입력오류입니다.");
+		}//-- try-catch END
+	}//-- main 메소드 END
+}
