@@ -1,3 +1,8 @@
+# WEB-INF 밑에 있으면 숨겨져 있어서 url로 바로 요청 불가능 하는 것 까먹지 말자
+
+# HandlerMapping 관련 /  https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=todoskr&logNo=220845006916
+
+# try-catch 에서 1개라도 오류있으면 addObject 안되서 view페이지에서 안나온다?
 
 # 전체적인 처리 과정에서 누락되는 경우를 없애기 위해 정리
 0. pom.xml : 필요한 설정하기 및 
