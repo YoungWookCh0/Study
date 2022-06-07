@@ -1,3 +1,12 @@
+# service 흐름 / https://opentogether.tistory.com/91
+
+# root-context.xml == applicationContext.xml
+
+#★ 비교적 상세 설명1 / https://datamoney.tistory.com/161
+#★ 비교적 상세 설명2 / https://giyatto.tistory.com/63?category=656328
+
+# @컨트롤러 지정 url-controller 맵핑
+
 # WEB-INF 밑에 있으면 숨겨져 있어서 url로 바로 요청 불가능 하는 것 까먹지 말자
 
 # HandlerMapping 관련 /  https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=todoskr&logNo=220845006916
