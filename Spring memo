@@ -1,3 +1,10 @@
+# 프로젝트 생성 후 초기 설정 / https://parkjye.tistory.com/59
+
+# h2DB 관련 / https://ojt90902.tistory.com/879
+	    / https://maeng-dev.tistory.com/90
+*H2 the file is locked -> 1. 파일 위치에서 문서가 락걸렸는지 확인
+		       2. 이미 db 사용중이라서 안 열림 -> 재부팅으로 해결됨
+     
 # service 흐름 / https://opentogether.tistory.com/91
 
 # root-context.xml == applicationContext.xml
