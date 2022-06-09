@@ -1,3 +1,18 @@
+# 초기 설정 관련 https://mangkyu.tistory.com/10 
+
+# Spring Legacy Project의 기본 구조 / https://parkjye.tistory.com/54
+			            https://freestrokes.tistory.com/78?category=1073732
+
+# 구조 개념 및 명명 규칙 https://boyboy94.tistory.com/13
+
+# 404 에러 관련 / https://xzio.tistory.com/1373
+
+# 생성관련 2가지 / https://lcs1245.tistory.com/entry/%EC%9D%B4%ED%81%B4%EB%A6%BD%EC%8A%A4-Spring-MVC-%EC%9B%B9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0
+
+# dispatcher-servlet / https://woopi1087.tistory.com/30?category=839519
+
+# https://addio3305.tistory.com/39?category=772645
+
 # 프로젝트 생성 후 초기 설정 / https://parkjye.tistory.com/59
 
 # h2DB 관련 / https://ojt90902.tistory.com/879
@@ -19,6 +34,9 @@
 # HandlerMapping 관련 /  https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=todoskr&logNo=220845006916
 
 # try-catch 에서 1개라도 오류있으면 addObject 안되서 view페이지에서 안나온다?
+
+# 스프링 부트 테이블 생성 및 관련 어노테이션 정리 / https://velog.io/@deannn/Spring-Boot-Blog-Project-DB-%ED%85%8C%EC%9D%B4%EB%B8%94-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
 
 # 전체적인 처리 과정에서 누락되는 경우를 없애기 위해 정리
 0. pom.xml : 필요한 설정하기 및 
