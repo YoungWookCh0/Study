@@ -19,7 +19,7 @@
 	    / https://maeng-dev.tistory.com/90
 *H2 the file is locked -> 1. 파일 위치에서 문서가 락걸렸는지 확인
 		       2. 이미 db 사용중이라서 안 열림 -> 재부팅으로 해결됨
-     
+
 # service 흐름 / https://opentogether.tistory.com/91
 
 # root-context.xml == applicationContext.xml
@@ -36,6 +36,18 @@
 # try-catch 에서 1개라도 오류있으면 addObject 안되서 view페이지에서 안나온다?
 
 # 스프링 부트 테이블 생성 및 관련 어노테이션 정리 / https://velog.io/@deannn/Spring-Boot-Blog-Project-DB-%ED%85%8C%EC%9D%B4%EB%B8%94-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+# 접근제어관련 /  https://hongong.hanbit.co.kr/%EC%9E%90%EB%B0%94-%EC%A0%91%EA%B7%BC-%EC%A0%9C%ED%95%9C%EC%9E%90%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%EC%B0%A8%EC%9D%B4public-protected-private/
+
+# @Resource 어노테이션의 적용 순서
+
+   1. name 속성에 지정한 빈 객체를 찾는다.
+
+   2. name 속성이 없을 경우, 동일한 타입을 갖는 빈 객체를 찾는다.
+
+   3. name 속성이 없고 동일한 타입을 갖는 빈 객체가 두 개 이상일 경우, 같은 이름을 가진 빈 객체를 찾는다.
+
+   4. name 속성이 없고 동일한 타입을 갖는 빈 객체가 두 개 이상이고 같은 이름을 가진 빈 객체가 없는 경우 @Qualifier를 이용해서 주입할 빈 객체를 찾는다.
 
 
 # 전체적인 처리 과정에서 누락되는 경우를 없애기 위해 정리
