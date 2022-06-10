@@ -62,3 +62,5 @@
 
 cf) 값 안넘어오는 경우 
 1. result 에 add 안했는지 dao 에서 확인해보기
+
+2. Mybatis parameter 여러개 넘기는지 확인
