@@ -3,3 +3,17 @@
 3. 디버그 관련 https://coding-factory.tistory.com/642	
 4. StringTokenizer https://rimkongs.tistory.com/294
 5. 접근제어 관련 https://hongong.hanbit.co.kr/%EC%9E%90%EB%B0%94-%EC%A0%91%EA%B7%BC-%EC%A0%9C%ED%95%9C%EC%9E%90%EC%9D%98-%EC%A2%85%EB%A5%98%EC%99%80-%EC%B0%A8%EC%9D%B4public-protected-private/
+<cf>
+1. trim() 메소드 사용 시 문자열이 없는 경우에 사용하면 빈 개체가 반환된다. 
+   이것을 배열에 담으면 빈 문자열이 담긴다. 즉, 인덱스 추가됨
+2. 빈 문자열을 배열에 담으면 사이즈는 늘었지만 해당 요소의 길이는 0이기 때문에 isEmpty()는 문자열의 길이가 0인 경우 true를 반환하므로 true 가 리턴된다
+
+3. 자바에서 주로 쓰는 기본 패키지
+
+- java.lang : 자바 프로그래밍을 위한 가장 기본적인 패키지와 클래스를 포함한다.
+
+- java.util : 프로그램을 제어하기 위한 클래스와 데이터를 효율적으로 저장하기 위한 클래스들을 담고 있다.
+
+- java.io : 키보드, 모니터, 프린터, 파일등을 제어할 수 있는 클래스들의 모음.
+
+- java.net : 통신을 위한 기능들을 담고 있다.
