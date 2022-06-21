@@ -50,3 +50,7 @@
 12. javascript & jquery  this관련  https://inpa.tistory.com/entry/jQuery-%F0%9F%93%9A-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-this-%E2%9A%94%EF%B8%8F-%EC%A0%9C%EC%9D%B4%EC%BF%BC%EB%A6%AC-this
 	js 에서 this는 id가 예를들어 div 에 걸려있으면 해당 div를 가리키지만
 	jquery 에서는  ex) div>button 클릭한 해당 버튼을 가리킨다
+	
+13. var / let 의 차이는 function-scorped , block-scoped 즉, 범위의 차이다
+
+14. $.each (2가지) /  https://webclub.tistory.com/455 
