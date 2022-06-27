@@ -71,3 +71,6 @@
 
 20. jquery id, name, class 접근 방법 / https://breakpoint.tistory.com/85
 
+21. where 1=1을 쓰는 이유 1) 주석처리 편리 2)동적쿼리에서 특정상황마다 where 절을 다르게 작성해야 할때 편리하다./ https://hyjykelly.tistory.com/5
+
+22. jsp에서 00021 이런식으로 넘겨도 db에서 형변환 시키면 0 제거해서 들어가진다.
