@@ -81,3 +81,6 @@
 
 25. JavaScript에서 if( !xx) 에서 not 연산 시 자료형에서 false로 반환되는 값은 "", null, undefined, 0, NaN 이 있고 나머지는 모두 true
      그리고 중요한 0, 0은 실제로 비어있지 않은 특정값 0을 의미 할수도 있지만 이경우엔 false를 반환합니다.
+
+26. prop(1) 속성값을 가져옴 / prop(1,2) 속성값을 추가
+     ex) selected, checked
