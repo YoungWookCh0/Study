@@ -84,3 +84,9 @@
 
 26. prop(1) 속성값을 가져옴 / prop(1,2) 속성값을 추가
      ex) selected, checked
+
+27. formData 관련 / https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-FormData-%EC%A0%95%EB%A6%AC-fetch-api
+	자바스크립트(Javascript)에서 formdata의 데이터를 조작할 때가 있습니다. 
+     	FormData 객체란 단순한 객체가 아니며 XMLHttpRequest 전송을 위하여 설계된 특수한 객체 형태입니다. 
+	그래서 문자열 화할 수 없는 객체이며 Console.log를 사용하여 확인이 불가능합니다.
+     	만일 formData의 데이터를 꼭 확인하고 싶다면, 위에서 배운 이터레이터로 폼데이터를 순회하여 값을 얻으면 됩니다.
