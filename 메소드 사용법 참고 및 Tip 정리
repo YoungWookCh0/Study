@@ -120,3 +120,6 @@
  
 33. select box 값에 대한 다양한 접근 및 처리 관련 / https://howcode.co.kr/main/tip_php/952 
 					  /  https://redcow77.tistory.com/326	
+
+※ 로그 관련 정리 
+- 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
