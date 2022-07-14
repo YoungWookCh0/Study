@@ -123,3 +123,6 @@
 
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
+
+※ Tip 정리
+1. 변수 선언시 초기화 해줘야 어디서 에러 발생 했는지 찾을 수 있다.
