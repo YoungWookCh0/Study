@@ -119,7 +119,11 @@
 	list에 이미지 여러개 담아 놓고 list를 random 으로 섞는 함수를 사용해서 1번째 것 뽑아오면 가능하다
  
 33. select box 값에 대한 다양한 접근 및 처리 관련 / https://howcode.co.kr/main/tip_php/952 
-					  /  https://redcow77.tistory.com/326	
+					      /  https://redcow77.tistory.com/326	
+
+34. popup 창은 모니터 기준이 아니라 해상도 기준으로 정렬을 하는데 주 모니터와 보조 모니터의 해상도가 다르기 때문에
+     정렬 위치가 달라진다.	/https://designer-ej.tistory.com/entry/Web-window-size-%eb%b0%8f-%ec%a2%8c%ed%91%9c-%ea%b4%80%eb%a0%a8-%ec%86%8d%ec%84%b1
+
 
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
