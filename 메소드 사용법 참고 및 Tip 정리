@@ -124,6 +124,7 @@
 34. popup 창은 모니터 기준이 아니라 해상도 기준으로 정렬을 하는데 주 모니터와 보조 모니터의 해상도가 다르기 때문에
      정렬 위치가 달라진다.	/https://designer-ej.tistory.com/entry/Web-window-size-%eb%b0%8f-%ec%a2%8c%ed%91%9c-%ea%b4%80%eb%a0%a8-%ec%86%8d%ec%84%b1
 
+35. attr() 문법 정리 / https://www.codingfactory.net/10208
 
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
