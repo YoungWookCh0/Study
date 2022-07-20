@@ -125,6 +125,9 @@
      정렬 위치가 달라진다.	/https://designer-ej.tistory.com/entry/Web-window-size-%eb%b0%8f-%ec%a2%8c%ed%91%9c-%ea%b4%80%eb%a0%a8-%ec%86%8d%ec%84%b1
 
 35. attr() 문법 정리 / https://www.codingfactory.net/10208
+	ex)
+	$( 'h1' ).attr( 'title', 'Hello' );
+	는 h1 요소에 title 속성을 추가하고 속성의 값은 Hello로 합니다.
 
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
