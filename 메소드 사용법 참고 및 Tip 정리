@@ -129,6 +129,9 @@
 	$( 'h1' ).attr( 'title', 'Hello' );
 	는 h1 요소에 title 속성을 추가하고 속성의 값은 Hello로 합니다.
 
+36. id는 중복 x , name 중복 o / https://woodforest.tistory.com/85
+	name에서는 뒤에 배열과 같이 인덱스 값 [i]이 포함됩니다.
+	
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
 
