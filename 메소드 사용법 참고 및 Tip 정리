@@ -134,7 +134,9 @@
 	같은 name을 가진 element가 하나일지라도 뒤에 [0]을 써주셔야 value, length 등을 구할 때 값이 제대로 출력됩니다.
 	같은 name의 element 의 배치 순서대로 [0], [1]... 순서가 정해집니다.
 	
-	
+37. <c:import> 는 <jsp:include>와 기능이 유사하지만, 차이점은 <c:import> 태그는 다른 페이지의 내용을 변수에 저장할 수 있음
+
+
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
 
