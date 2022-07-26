@@ -136,6 +136,11 @@
 	
 37. <c:import> 는 <jsp:include>와 기능이 유사하지만, 차이점은 <c:import> 태그는 다른 페이지의 내용을 변수에 저장할 수 있음
 
+38. selectKey 란 /  https://yookeun.github.io/java/2014/07/11/mybatis-selectkey/
+	DB작업을 하다보면 먼저 사전에 어떤 키값을 가져와서 증가시켜서 입력하거나 혹은 입력후에 증가된 키값을 가져올 필요가 있다.
+	이럴때 mybatis에서 제공하는 selectKey를 이용하면 별도의 쿼리로직을 등록할 필요없이 해당 메소드에서 일괄처리할 수가 있다
+
+
 
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
