@@ -139,6 +139,8 @@
 38. selectKey 란 /  https://yookeun.github.io/java/2014/07/11/mybatis-selectkey/
 	DB작업을 하다보면 먼저 사전에 어떤 키값을 가져와서 증가시켜서 입력하거나 혹은 입력후에 증가된 키값을 가져올 필요가 있다.
 	이럴때 mybatis에서 제공하는 selectKey를 이용하면 별도의 쿼리로직을 등록할 필요없이 해당 메소드에서 일괄처리할 수가 있다
+	1) 입력하기전에 특정키값을 가져온 다음 그 값을 이용해서 처리 -> order="BEFORE"
+	2) 방금 입력한 값의 특정값을 리턴 -> order=AFTER로 설정
 
 
 
