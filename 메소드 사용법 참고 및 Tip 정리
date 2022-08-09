@@ -161,7 +161,8 @@
 	union은 결과값을 자동으로 정렬 후 반환하지만? 어떤 걸 기준으로 하는지?
 	union all 은 정렬을 하지 않고 반환합니다.
 	
-	
+
+43. #, $ 차이 for 동적 테이블 / 	
 	
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
