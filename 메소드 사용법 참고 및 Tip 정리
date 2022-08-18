@@ -172,6 +172,9 @@
 46. 함수에서 switch case 사용 시 break; 를 넣어주지 않으면 뒤에 이어지는 case 경우에 걸린 조건문도 같이 걸린다.
 	ex) keyUp이벤트
 	
+
+47. moment.js 사용방법 / https://jsikim1.tistory.com/195
+
 ※ 로그 관련 정리 
 - 파라미터 개수가 3개 이상이면 가용 로그 레벨을 체크하기 전에 Object[] 를 생성하는 비용이 발생 / http://dveamer.github.io/backend/HowToUseSlf4j.html
 
